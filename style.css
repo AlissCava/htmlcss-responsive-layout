@@ -1,0 +1,26 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: dodgerblue;
+}
+
+#logo{
+    margin: 10px 20px;
+}
+
+.fa-bars{
+    margin: 0 20px 10px;
+    color: white;
+    font-size: 20px;
+}
+
+#container{
+    width: 480px;
+    height: 2000px;
+}
