@@ -35,18 +35,15 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    width: 90%;
     min-height: 600px;
-    margin: auto;
     /* debug */
     /* background-color: aquamarine; */
 }
 
 .card{
     width: 100%;
-    min-height: 550px;
     border-radius: 5%;
-    margin-top: 50px;
+    margin: 50px 20px 0 20px;
     /* debug */
     background-color: rgb(186, 228, 255);
 }
@@ -65,7 +62,7 @@
 
 .card-image{
     margin-left: 15%;
-    max-width: 70%;
+    width: 250px;
 }
 
 .card-bottom{
@@ -81,19 +78,15 @@
 
 .fa-file-code, .fa-compass-drafting, .fa-laptop-code, .fa-bullhorn{
     color: dodgerblue;
-    font-size: 150px;
+    font-size: 100px;
     margin-left: 35%;
     margin-top: 50px
 }
 
 /* responsive part */
-@media all and (min-width: 1168px) {
+@media all and (min-width: 768px) {
 
     /* header */
-    .fa-bars{
-        display: none;
-    }
-
     #nav{
         display: flex;
         align-items: center;
@@ -101,22 +94,86 @@
         background-color: dodgerblue;
     }
 
+    .fa-bars{
+        display: none;
+    }
+
     #menu{
         display: block;
         margin-left: 400px;
     }
-   
+
     .navPC{
         color: aliceblue;
         margin: 0 20px 10px;
-    }  
-   
+    }
+
+      /* mainn section 1 */
+    .row{
+        display: flex;
+        width: 90%;
+    }
+/* 
+    .row .colonna{
+        width: 30%;
+    } */
+
+    .row .first-col .card{
+        display: flex;
+        min-height: 200px;
+        max-height: 1000px;
+    }
+
+    .card-image{
+         width: 250px;
+    }
+
 }
 
-@media all and (max-width: 760px) {
-    
+@media all and (min-width: 480px)
+{
+    #nav{
+        display: flex;
+    }
+
     /* header */
     #menu{
       display: none;
     }
+
+    .fa-bars{
+        display: block;
+    }
+
+    /* mainn section 1 */
+    .row{
+        display: flex;
+        width: 90%;
+    }
+
+    .row .colonna{
+        margin: 30px;
+    }
+
+    .row .first-col .card{
+        min-width: 80%;
+        min-height: 200px;
+        /* max-height: 1000px; */
+    }
+
+    .row .colonna .card{
+        min-height: 200px;
+        /* max-height: 1000px; */
+    }
+
+    .card-image{
+        margin-right: 50px;
+         width: 250px;
+    }
+
+    .fa-file-code, .fa-compass-drafting, .fa-laptop-code, .fa-bullhorn{
+        color: dodgerblue;
+        font-size: 50px;
+    }
+
 }
