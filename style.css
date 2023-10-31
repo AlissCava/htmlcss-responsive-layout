@@ -27,7 +27,7 @@
 }
 
 /* main */
-#container{
+.container{
     width: 100%;
 }
 
@@ -35,15 +35,15 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    min-height: 600px;
+    /* min-height: 600px; */
     /* debug */
     /* background-color: aquamarine; */
 }
 
 .card{
     width: 100%;
-    border-radius: 5%;
-    margin: 50px 20px 0 20px;
+    border-radius: 20px;
+    margin: 20px 20px 0 20px;
     /* debug */
     background-color: rgb(186, 228, 255);
 }
@@ -83,6 +83,57 @@
     margin-top: 50px
 }
 
+
+
+
+/* sezione1 */
+.container-planning{
+    width: 100%;
+    background-color: rgb(151, 149, 225);
+    color: white;
+    margin: auto;
+    margin-top: 100px;
+    padding-bottom: 100px;
+}
+
+.h1-planning{
+    color: white;
+}
+
+.image1-planning, .image2-planningcard{
+    margin-left: 5%;
+    width: 90%;
+}
+
+.container-planningcard{
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+    /* margin-bottom: 100px; */
+    background-color: white;
+    border-radius: 20px;
+}
+
+.p-planningcard, .h1-planningcard{
+    color: black;
+    text-align: center;
+}
+
+
+.fa-arrow-down-long{
+    color: black;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 40%;
+    padding: 10px;
+    font-size: 60px;
+    width: 60px;
+    text-align: center;
+    background-color: rgb(151, 149, 225);
+    border-radius: 100px;
+}
+
+
 /* responsive part */
 @media all and (min-width: 768px) {
 
@@ -111,6 +162,7 @@
       /* mainn section 1 */
     .row{
         display: flex;
+        align-items: flex-start;
         width: 90%;
     }
 /* 
@@ -120,12 +172,39 @@
 
     .row .first-col .card{
         display: flex;
+        justify-content: center;
         min-height: 200px;
         max-height: 1000px;
     }
 
     .card-image{
          width: 250px;
+    }
+
+    /* sezione2 */
+    .container-planning{
+        display: flex;
+        width: 100%;
+        background-color: rgb(151, 149, 225);
+        color: white;
+        margin: auto;
+        margin-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .container-planningcard{
+        width: 70%;
+        margin: auto;
+        margin-top: 100px;
+        margin-right: 100px;
+        /* margin-bottom: 100px; */
+        background-color: white;
+        border-radius: 20px;
+    }
+
+    .image1-planning, .image2-planningcard{
+        margin-left: 5%;
+        min-width: 80%;
     }
 
 }
@@ -174,6 +253,12 @@
     .fa-file-code, .fa-compass-drafting, .fa-laptop-code, .fa-bullhorn{
         color: dodgerblue;
         font-size: 50px;
+    }
+
+    /* sezione */
+    .image1-planning, .image2-planningcard{
+        margin-left: 5%;
+        width: 90%;
     }
 
 }
