@@ -135,6 +135,45 @@
 
 /* SEZIONE3 */
 
+.container-partner{
+    width: 100%;
+    background-color: white;
+    color: black;
+    margin: auto;
+    margin-top: 100px;
+    padding-bottom: 100px;
+}
+
+.p-TESTIMONIALS{
+    margin-left: 35%;
+    margin-bottom: 20PX;
+}
+
+.h1-partner{
+    width: 60%;
+    margin: auto;
+    color: rgb(151, 149, 225);
+}
+
+.p-partner{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.container-partnercards{
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    /* margin-bottom: 100px; */
+    background-color: rgb(151, 149, 225);
+    color: white;
+    border-radius: 20px;
+}
+
+.testimonial1{
+    width: 70%;
+    border-radius: 90%;
+}
 
 /* responsive part */
 @media all and (min-width: 768px) {
