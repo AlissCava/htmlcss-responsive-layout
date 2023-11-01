@@ -160,7 +160,7 @@
     text-align: center;
 }
 
-.container-partnercards{
+.container-testimonial{
     width: 80%;
     margin: auto;
     margin-top: 100px;
@@ -168,13 +168,26 @@
     background-color: rgb(151, 149, 225);
     color: white;
     border-radius: 20px;
+    padding-bottom: 50px;
 }
 
 .testimonial1{
+    margin-top: 50px;
     width: 70%;
-    border-radius: 90%;
+    /* height: 250px; */
+    border-radius: 100%;
 }
 
+.p-testimonials{
+    font-size: 2rem;
+    line-height: 50px;
+    text-align: center;
+}
+
+
+.h1-testimonials{
+    color: white;
+}
 /* responsive part */
 @media all and (min-width: 768px) {
 
@@ -222,7 +235,7 @@
          width: 250px;
     }
 
-    /* sezione2 */
+    /* main sezione2 */
     .container-planning{
         display: flex;
         width: 100%;
@@ -244,10 +257,19 @@
     }
 
     .image1-planning, .image2-planningcard{
-        margin-left: 5%;
+        margin-left:5%;
         min-width: 80%;
     }
 
+    /* main sezione3 */
+
+    .container-testimonial{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 50%;
+        margin-right: 50%;
+    }
 }
 
 @media all and (min-width: 480px)
@@ -296,10 +318,48 @@
         font-size: 50px;
     }
 
-    /* sezione */
+    /* main sezione2 */
     .image1-planning, .image2-planningcard{
         margin-left: 5%;
         width: 90%;
+    }
+
+    /* sezione 3 */
+
+    .container-testimonial{
+        width: 90%;
+        height: 400px;
+        margin: auto;
+        margin-top: 100px;
+        /* margin-bottom: 100px; */
+        background-color: rgb(151, 149, 225);
+        color: white;
+        border-radius: 20px;
+    }
+
+    .p-TESTIMONIALS{
+        margin-left: 45%;
+    }
+
+    .container-testimonial{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .testimonial1{
+        /* margin-top: 50px; */
+        width: 100%;
+        /* height: 250px; */
+        /* border-radius: 60%; */
+    }
+
+    .p-testimonials{
+        width: 90%;
+        margin-top: 50px;
+        font-size: 1.5rem;
+        line-height: 50px;
+        text-align: center;
     }
 
 }
