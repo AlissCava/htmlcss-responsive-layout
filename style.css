@@ -49,8 +49,13 @@
 }
 
 .card-title{
-    margin: 40px 0 30px;
+    font-size: 2rem;
+    
+}
+
+.h1-demo{
     text-align: center;
+    margin: 40px 0 30px;
     color: dodgerblue;
 }
 
@@ -104,6 +109,8 @@
 }
 
 .h1-planning{
+    text-align: center;
+    margin: auto;
     color: white;
 }
 
@@ -157,6 +164,8 @@
 }
 
 .h1-partner{
+    text-align: center;
+    margin: auto;
     width: 60%;
     margin: auto;
     color: rgb(151, 149, 225);
@@ -193,6 +202,8 @@
 
 
 .h1-testimonials{
+    text-align: center;
+    margin: auto;
     color: white;
 }
 
@@ -201,9 +212,12 @@
     background-color: rgb(151, 149, 225);
     color: white;
     padding-top: 40px;
+    padding-bottom: 50px;
 }
 
 .h1-benefit{
+    text-align: center;
+    margin: auto;
     width: 60%;
     margin: auto;
     color: white;
@@ -222,6 +236,7 @@
 }
 
 .h1-number-cardbenefit{
+    margin: auto;
     margin-left: 16%;
     font-size: 4rem;
     color: rgb(151, 149, 225);
@@ -246,6 +261,48 @@
     margin-top: 40px;
     margin-left: 15%;
 }
+
+/*  main sezione5 */
+.container-aboutus{
+    margin: auto;
+    padding-top: 50px;
+}
+
+.h1-aboutus{
+    margin-left: 15%;
+    font-size: 4rem;
+    color: rgb(151, 149, 225);
+}
+
+.p-aboutus{
+    color: black;
+    margin-top: 40px;
+    line-height: 40px;
+}
+
+.image-aboutus{
+    margin-left: 15%;
+    margin-top: 40px;
+    width: 50%;
+    border-radius: 60%;
+}
+
+.p-aboutus-right{
+    font-size:  2rem;
+    color:  rgb(151, 149, 225);
+    margin-top: 40px;
+    line-height: 60px;
+}
+
+.bottom-aboutus{
+    background-color:  rgb(151, 149, 225);
+    color: aliceblue;
+    margin-top: 40px;
+    padding: 2%;
+    margin-left: 15%;
+    border-radius: 5%;
+}
+
 
 
 /* responsive part */
@@ -332,6 +389,13 @@
     }
 
     /* main sezione 4 */
+
+    .container-cardbenefit{
+       width: calc(80% / 3);
+    }
+
+
+  
 }
 
 @media all and (min-width: 480px)
@@ -422,6 +486,16 @@
         font-size: 1.5rem;
         line-height: 50px;
         text-align: center;
+    }
+
+    /* main section 4 */
+    #unioncard{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .container-cardbenefit{
+       width: calc(80% / 2);
     }
 
 }
