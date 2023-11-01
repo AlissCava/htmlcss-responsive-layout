@@ -66,13 +66,20 @@
 }
 
 .card-bottom{
-    width: 40%;
-    margin: 40px 30% 30px;
+    width: 40%; 
     padding: 5px;
     text-align: center;
+    border-radius: 10%;
+}
+
+.bottom-appstore{
+    margin: 40px 30% 30px;
     color: aliceblue;
     background-color: dodgerblue;
-    border-radius: 10%;
+}
+
+.bottom-cardbenefit{
+    font-size: 2rem;
 }
 
 
@@ -188,6 +195,59 @@
 .h1-testimonials{
     color: white;
 }
+
+/* sezione 4 */
+.container-benefit{
+    background-color: rgb(151, 149, 225);
+    color: white;
+    padding-top: 40px;
+}
+
+.h1-benefit{
+    width: 60%;
+    margin: auto;
+    color: white;
+}
+
+.container-cardbenefit{
+    justify-content: flex-start;
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    /* margin-bottom: 100px; */
+    background-color: white;
+    border-radius: 20px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.h1-number-cardbenefit{
+    margin-left: 16%;
+    font-size: 4rem;
+    color: rgb(151, 149, 225);
+}
+
+.h2-cardbenefit{
+    color: rgb(151, 149, 225);
+    margin-left: 15%;
+    margin-top: 10%;
+    font-size: 2rem;
+}
+
+.p-cardbenefit{
+    color: black;
+    margin-top: 40px;
+    line-height: 40px;
+}
+
+.bottom-cardbenefit{
+    color: white;
+    background-color: rgb(151, 149, 225);
+    margin-top: 40px;
+    margin-left: 15%;
+}
+
+
 /* responsive part */
 @media all and (min-width: 768px) {
 
@@ -270,6 +330,8 @@
         margin-left: 50%;
         margin-right: 50%;
     }
+
+    /* main sezione 4 */
 }
 
 @media all and (min-width: 480px)
